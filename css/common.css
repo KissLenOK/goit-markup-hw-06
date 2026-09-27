@@ -1,14 +1,16 @@
 body {
-  background-color: #fff;
-  color: #434455;
   font-family: 'Roboto', sans-serif;
+  color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  background-color: #fff;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+  padding: 0;
 }
 
 h1,
@@ -39,14 +41,34 @@ img {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .accent {
@@ -71,16 +93,23 @@ address {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 56px;
+  }
 }
 
 .subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  text-align: center;
   color: #2e2f42;
 }
 
@@ -105,6 +134,10 @@ address {
   justify-content: center;
 }
 
+.main-socials-list {
+  gap: 16px;
+}
+
 .socials-item {
   width: 40px;
   height: 40px;
@@ -120,7 +153,23 @@ address {
   background-color: #4d5ae5;
 }
 
+.main-socials-link {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+.main-socials-link:hover,
+.main-socials-link:focus {
+  background-color: #31d0aa;
+}
+
 .socials-icon {
   align-items: center;
   justify-content: center;
+}
+
+.main-socials-icon {
+  color: #f4f4fd;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
