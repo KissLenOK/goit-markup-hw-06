@@ -77,6 +77,7 @@ img {
 
 .logo {
   font-family: 'Raleway', sans-serif;
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
@@ -113,6 +114,12 @@ address {
   color: #2e2f42;
 }
 
+@media only screen and (min-width: 768px) {
+  .subtitle {
+    text-align: left;
+  }
+}
+
 .sr-only {
   position: absolute;
   white-space: nowrap;
@@ -132,6 +139,12 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .socials-list {
+    justify-content: start;
+  }
 }
 
 .main-socials-list {
@@ -172,4 +185,38 @@ address {
   color: #f4f4fd;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
+}
+
+/* buttons */
+.btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.btn-close-icon {
+  color: #2e2f42;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.btn-close:hover .btn-close-icon,
+.btn-close:focus .btn-close-icon {
+  color: #fff;
 }

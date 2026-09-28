@@ -40,7 +40,7 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1158px) {
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -76,7 +76,7 @@
 .hero-main-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
 
@@ -92,7 +92,8 @@
     margin: 0 auto 36px;
   }
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 1158px) {
   .hero-main-title {
     margin: 0 auto 48px;
   }

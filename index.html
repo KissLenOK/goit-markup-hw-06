@@ -75,7 +75,7 @@
 
       <section class="features section" id="features">
         <div class="container">
-          <h2 class="sr-only">Our Features</h2>
+          <h2 class="sr-only">Our features</h2>
           <ul class="features-list">
             <li class="features-item">
               <div class="features-icon-container">
@@ -84,7 +84,7 @@
                 </svg>
               </div>
               <h3 class="subtitle features-subtitle">Strategy</h3>
-              <p>
+              <p class="features-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -96,7 +96,7 @@
                 </svg>
               </div>
               <h3 class="subtitle features-subtitle">Punctuality</h3>
-              <p>
+              <p class="features-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -108,7 +108,7 @@
                 </svg>
               </div>
               <h3 class="subtitle features-subtitle">Diligence</h3>
-              <p>
+              <p class="features-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -120,7 +120,7 @@
                 </svg>
               </div>
               <h3 class="subtitle features-subtitle">Technologies</h3>
-              <p>
+              <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -622,10 +622,14 @@
       </div>
     </footer>
 
-    <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu is-open" id="mobile-menu">
       <div class="container mobile-menu-container">
-        <button type="button" class="mobile-menu-btn">
-          <svg class="mobile-menu-btn-icon" width="8" height="8">
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close mobile menu button"
+        >
+          <svg class="btn-close-icon" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
@@ -653,13 +657,15 @@
             <li>
               <a
                 class="mobile-menu-contacts-link attention"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
               >
             </li>
             <li>
-              <a class="mobile-menu-contacts-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
+              <a
+                class="mobile-menu-contacts-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
           </ul>
@@ -703,12 +709,8 @@
     <!--  is-open -->
     <div class="backdrop" id="modal">
       <div class="modal">
-        <button
-          type="button"
-          class="modal-btn-close"
-          aria-label="Close modal button"
-        >
-          <svg class="modal-btn-icon" width="8" height="8">
+        <button type="button" class="btn-close" aria-label="Close modal button">
+          <svg class="btn-close-icon" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>

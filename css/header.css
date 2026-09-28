@@ -85,6 +85,7 @@
 
 .header-contacts-container {
   margin-left: auto;
+  align-self: center;
 }
 
 .header-contacts-list {
@@ -110,19 +111,13 @@
   transition-property: color;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.98px) {
-  .header-contacts-list li:first-child .contacts-link {
-    padding-top: 16px;
-  }
-  .header-contacts-list li:last-child .contacts-link {
-    padding-bottom: 16px;
-  }
-}
-
 @media only screen and (min-width: 1158px) {
   .contacts-link {
     padding-top: 24px;
     padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 
