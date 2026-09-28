@@ -50,8 +50,12 @@
   color: #2e2f42;
 }
 
-.attention {
+.main-nav-attention {
   color: #404bbf;
+}
+
+.contact-attention {
+  color: #4d5ae5;
 }
 
 .mobile-menu-contacts-container {
